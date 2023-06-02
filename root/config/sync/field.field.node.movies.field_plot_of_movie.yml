@@ -1,0 +1,23 @@
+uuid: eda0903e-7f6b-42b3-a721-eca598acb19f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plot_of_movie
+    - node.type.movies
+  module:
+    - text
+id: node.movies.field_plot_of_movie
+field_name: field_plot_of_movie
+entity_type: node
+bundle: movies
+label: 'Plot of the movie'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

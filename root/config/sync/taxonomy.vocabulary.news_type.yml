@@ -1,0 +1,8 @@
+uuid: 7cb51640-3032-48f8-b5b2-a04022a5674b
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Type'
+vid: news_type
+description: 'movie/celeb news'
+weight: 0

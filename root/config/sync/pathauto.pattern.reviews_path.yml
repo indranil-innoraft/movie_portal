@@ -1,0 +1,22 @@
+uuid: 171c8066-ffd1-41a5-9bf2-4a424621d56e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: reviews_path
+label: 'reviews path'
+type: 'canonical_entities:node'
+pattern: '/reviews/[node:title]'
+selection_criteria:
+  03a0d2d6-15ad-4bde-a7a8-f8bcc31aeddf:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 03a0d2d6-15ad-4bde-a7a8-f8bcc31aeddf
+    context_mapping:
+      node: node
+    bundles:
+      review: review
+selection_logic: and
+weight: -5
+relationships: {  }

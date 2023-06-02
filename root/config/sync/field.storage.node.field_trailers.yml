@@ -1,0 +1,19 @@
+uuid: 6640e48f-0db9-4aa1-abef-8eb1ade16fd4
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_trailers
+field_name: field_trailers
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

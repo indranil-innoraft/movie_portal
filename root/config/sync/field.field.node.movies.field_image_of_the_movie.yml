@@ -1,0 +1,38 @@
+uuid: a187ef09-45c1-4e67-a747-8dc3c751b1f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_of_the_movie
+    - node.type.movies
+  module:
+    - image
+id: node.movies.field_image_of_the_movie
+field_name: field_image_of_the_movie
+entity_type: node
+bundle: movies
+label: 'Image of the movie'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

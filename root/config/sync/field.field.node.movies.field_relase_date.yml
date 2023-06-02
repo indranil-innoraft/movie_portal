@@ -1,0 +1,21 @@
+uuid: fc1a7c48-89dd-4da3-8215-3c567d2eb534
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_relase_date
+    - node.type.movies
+  module:
+    - datetime
+id: node.movies.field_relase_date
+field_name: field_relase_date
+entity_type: node
+bundle: movies
+label: 'Relase Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,14 @@
+uuid: 947e1089-85e0-4c99-a99c-b11ecb036a16
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movies
+  module:
+    - node
+id: movie_manager
+label: 'Movie Manager'
+weight: 4
+is_admin: false
+permissions:
+  - 'create movies content'

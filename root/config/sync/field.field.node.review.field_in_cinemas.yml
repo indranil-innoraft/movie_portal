@@ -1,0 +1,23 @@
+uuid: 2f46b07b-ba8f-4cec-983f-0077953ab74c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_in_cinemas
+    - node.type.review
+  module:
+    - link
+id: node.review.field_in_cinemas
+field_name: field_in_cinemas
+entity_type: node
+bundle: review
+label: 'In Cinemas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link
