@@ -9,7 +9,7 @@ dependencies:
     - field.storage.node.field_picture
     - field.storage.node.field_plot
     - field.storage.node.field_trailers
-    - image.style.small_review_image
+    - image.style.thumbnail
     - node.type.review
   module:
     - image
@@ -42,7 +42,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -74,7 +74,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -105,7 +105,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -149,7 +149,7 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: small_review_image
+            image_style: thumbnail
             image_loading:
               attribute: lazy
           group_column: ''
@@ -171,7 +171,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -234,7 +234,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -301,7 +301,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -368,7 +368,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -435,7 +435,7 @@ display:
           admin_label: ''
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -493,6 +493,55 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: "{{ title }}\r\n<table>\r\n<tr>\r\n<td>{{ field_picture }}</td>\r\n<td> &nbsp; {{ field_plot }}</td>\r\n</tr>\r\n</table>\r\n{{ field_trailers }}  \t&#8739;\r\n{{ field_in_cinemas }}   \t&#8739;\r\n{{ field_buy_on_dvd }}   \t&#8739;\r\n{{ field_imdb }}  \t&#8739;"
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
       pager:
         type: some
         options:
@@ -558,28 +607,25 @@ display:
       style:
         type: table
         options:
-          grouping:
-            -
-              field: field_trailers
-              rendered: true
-              rendered_strip: false
+          grouping: {  }
           row_class: ''
           default_row_class: true
           columns:
             title: title
-            field_picture: title
-            field_plot: field_plot
+            field_picture: field_picture
+            field_plot: field_picture
             field_trailers: field_trailers
-            field_in_cinemas: field_trailers
-            field_buy_on_dvd: field_trailers
-            field_imdb: field_trailers
+            field_in_cinemas: field_in_cinemas
+            field_buy_on_dvd: field_buy_on_dvd
+            field_imdb: field_imdb
+            nothing: nothing
           default: '-1'
           info:
             title:
               sortable: false
               default_sort_order: asc
               align: ''
-              separator: '<br>'
+              separator: ''
               empty_column: false
               responsive: ''
             field_picture:
@@ -593,27 +639,32 @@ display:
               sortable: false
               default_sort_order: asc
               align: ''
-              separator: '<br>'
+              separator: ''
               empty_column: false
               responsive: ''
             field_trailers:
               align: ''
-              separator: '<br>'
+              separator: ''
               empty_column: false
               responsive: ''
             field_in_cinemas:
               align: ''
-              separator: '<br>'
+              separator: ''
               empty_column: false
               responsive: ''
             field_buy_on_dvd:
               align: ''
-              separator: '<br>'
+              separator: ''
               empty_column: false
               responsive: ''
             field_imdb:
               align: ''
-              separator: '<br>'
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nothing:
+              align: ''
+              separator: ''
               empty_column: false
               responsive: ''
           override: true

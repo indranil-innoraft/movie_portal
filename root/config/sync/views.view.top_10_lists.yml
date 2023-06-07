@@ -1,18 +1,18 @@
-uuid: 1cb31e52-8bb7-4555-9c6d-391e6df68ea0
+uuid: f10fc73b-7289-4222-95ee-b262155739dc
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_relase_date
-    - node.type.movies
+    - field.storage.node.field_date
+    - node.type.list
   module:
     - datetime
     - node
     - user
-id: top_ten_lists
-label: 'Top ten lists'
+id: top_10_lists
+label: 'top 10 lists'
 module: views
-description: 'top 10 lists'
+description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -23,12 +23,12 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Top ten lists'
+      title: 'top 10 lists'
       fields:
-        field_relase_date:
-          id: field_relase_date
-          table: node__field_relase_date
-          field: field_relase_date
+        field_date:
+          id: field_date
+          table: node__field_date
+          field: field_date
           relationship: none
           group_type: group
           admin_label: ''
@@ -77,7 +77,7 @@ display:
           click_sort_column: value
           type: datetime_default
           settings:
-            timezone_override: ''
+            timezone_override: Asia/Kolkata
             format_type: html_date
           group_column: value
           group_columns: {  }
@@ -104,13 +104,13 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: true
-            path: 'top-ten-lists/{{ title }}'
-            absolute: true
+            make_link: false
+            path: ''
+            absolute: false
             external: false
             replace_spaces: false
             path_case: none
-            trim_whitespace: true
+            trim_whitespace: false
             alt: ''
             rel: ''
             link_class: ''
@@ -132,7 +132,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -143,7 +143,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -155,7 +155,7 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: full
+        type: mini
         options:
           offset: 0
           items_per_page: 10
@@ -164,8 +164,6 @@ display:
           tags:
             next: ››
             previous: ‹‹
-            first: '« Prev'
-            last: 'Next »'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -174,7 +172,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          quantity: 9
       exposed_form:
         type: basic
         options:
@@ -231,38 +228,11 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            movies: movies
+            list: list
       style:
         type: table
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          columns:
-            title: title
-          default: '-1'
-          info:
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          override: true
-          sticky: false
-          summary: ''
-          empty_table: false
-          caption: ''
-          description: ''
       row:
         type: fields
-        options:
-          default_field_elements: true
-          inline:
-            title: title
-          separator: ''
-          hide_empty: false
       query:
         type: views_query
         options:
@@ -272,18 +242,7 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text_custom
-          empty: true
-          content: '<h3>Top 10 list</h3>'
-          tokenize: false
+      header: {  }
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -295,7 +254,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_relase_date'
+        - 'config:field.storage.node.field_date'
   page_1:
     id: page_1
     display_title: Page
@@ -313,4 +272,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
-        - 'config:field.storage.node.field_relase_date'
+        - 'config:field.storage.node.field_date'

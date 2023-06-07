@@ -24,6 +24,7 @@
         "drupal/core-recommended": "^10.0",
         "drupal/pathauto": "^1.11",
         "drupal/quicktabs": "^3.0@alpha",
+        "drupal/search_api": "^1.29",
         "drupal/webform": "^6.2@beta"
     },
     "conflict": {

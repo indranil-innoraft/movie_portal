@@ -1,0 +1,19 @@
+uuid: 3d71f09d-1851-484e-8d0f-26438ad458e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_why_these_are_in_the_lsits
+    - node.type.list
+id: node.list.field_why_these_are_in_the_lsits
+field_name: field_why_these_are_in_the_lsits
+entity_type: node
+bundle: list
+label: 'Why these are in the lsits?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
