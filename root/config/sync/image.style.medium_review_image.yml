@@ -1,0 +1,15 @@
+uuid: 42ff330a-b303-41c7-a6f8-7764837fdfb7
+langcode: en
+status: true
+dependencies: {  }
+name: medium_review_image
+label: 'medium review image'
+effects:
+  59f7021d-93ec-40ca-a42d-7ef556018281:
+    uuid: 59f7021d-93ec-40ca-a42d-7ef556018281
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 130
+      height: 100
+      anchor: center-center

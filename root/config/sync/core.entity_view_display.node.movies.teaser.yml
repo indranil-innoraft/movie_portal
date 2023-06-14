@@ -1,0 +1,28 @@
+uuid: 6845ec67-42cb-4bc2-a940-3f0739e1992f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movies.field_genre
+    - field.field.node.movies.field_image_of_the_movie
+    - field.field.node.movies.field_plot_of_movie
+    - field.field.node.movies.field_relase_date
+    - node.type.movies
+  module:
+    - user
+id: node.movies.teaser
+targetEntityType: node
+bundle: movies
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_genre: true
+  field_image_of_the_movie: true
+  field_plot_of_movie: true
+  field_relase_date: true

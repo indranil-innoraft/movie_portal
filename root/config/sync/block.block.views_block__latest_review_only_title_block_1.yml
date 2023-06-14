@@ -1,0 +1,29 @@
+uuid: 0f23a5cf-62e8-4f59-8a1b-53ccf49b6ab3
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.latest_review_only_title
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: views_block__latest_review_only_title_block_1
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:latest_review_only_title-block_1'
+settings:
+  id: 'views_block:latest_review_only_title-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node

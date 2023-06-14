@@ -1,0 +1,13 @@
+uuid: db229883-d11d-4bed-8e94-cddc0e75a29f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: comedy
+label: comedy
+path: comedy
+weight: 0
+plugin: node_search
+configuration:
+  rankings: {  }

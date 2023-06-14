@@ -1,0 +1,25 @@
+uuid: e146371c-8d57-46fb-990a-f7f28e2f8658
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+    - system
+  theme:
+    - bootstrap5
+id: quicktabsfontpagenewstab
+theme: bootstrap5
+region: content
+weight: -2
+provider: null
+plugin: 'quicktabs_block:font_page_news_tab'
+settings:
+  id: 'quicktabs_block:font_page_news_tab'
+  label: 'QuickTabs - font page news tab'
+  label_display: '0'
+  provider: quicktabs
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node\r\n/news"

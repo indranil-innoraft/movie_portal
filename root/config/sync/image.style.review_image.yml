@@ -1,0 +1,15 @@
+uuid: b40c95f3-b328-4647-a5d2-ce001b954d46
+langcode: en
+status: true
+dependencies: {  }
+name: review_image
+label: 'review image'
+effects:
+  935c0572-f704-4c7a-a79d-376a62e0e435:
+    uuid: 935c0572-f704-4c7a-a79d-376a62e0e435
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 200
+      anchor: center-center

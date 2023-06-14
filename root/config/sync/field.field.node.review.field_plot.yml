@@ -1,0 +1,23 @@
+uuid: 9187ab21-d61d-46aa-8c2f-a22a99c39ce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plot
+    - node.type.review
+  module:
+    - text
+id: node.review.field_plot
+field_name: field_plot
+entity_type: node
+bundle: review
+label: Plot
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

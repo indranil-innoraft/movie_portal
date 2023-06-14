@@ -1,0 +1,13 @@
+uuid: 1c6fb644-305f-475c-84eb-1cacc4963f69
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Content
+path: drama
+weight: 0
+plugin: node_search
+configuration:
+  rankings: {  }

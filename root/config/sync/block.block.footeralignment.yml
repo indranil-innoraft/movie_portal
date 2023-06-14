@@ -1,0 +1,25 @@
+uuid: 066577eb-4e17-4a91-abdb-cea131a7f80c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ccdbe4c7-b43c-457e-8511-ad87e14f48bd'
+  module:
+    - block_content
+  theme:
+    - bootstrap5
+id: footeralignment
+theme: bootstrap5
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:ccdbe4c7-b43c-457e-8511-ad87e14f48bd'
+settings:
+  id: 'block_content:ccdbe4c7-b43c-457e-8511-ad87e14f48bd'
+  label: 'Footer Alignment'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

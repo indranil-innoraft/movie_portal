@@ -1,0 +1,41 @@
+uuid: ddc3e984-ff2e-4812-a1f4-3c556d22c70f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2d61a792-ac8b-40f4-abf0-d8a5ff953283'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - bootstrap5
+id: recommendedlistcurated
+theme: bootstrap5
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:2d61a792-ac8b-40f4-abf0-d8a5ff953283'
+settings:
+  id: 'block_content:2d61a792-ac8b-40f4-abf0-d8a5ff953283'
+  label: 'recommended list (curated)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/reviews/*\r\n/search/*"
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

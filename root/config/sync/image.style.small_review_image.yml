@@ -1,0 +1,15 @@
+uuid: 5732a9b4-bd09-4d1a-b5f5-7ddfab85263b
+langcode: en
+status: true
+dependencies: {  }
+name: small_review_image
+label: 'small review image'
+effects:
+  af477401-b394-4557-acd7-167349ea130c:
+    uuid: af477401-b394-4557-acd7-167349ea130c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      anchor: center-center

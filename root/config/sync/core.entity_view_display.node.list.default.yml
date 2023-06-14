@@ -1,0 +1,40 @@
+uuid: 2144349a-8a2a-4a35-b9fc-c26af6797550
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.list.field_date
+    - field.field.node.list.field_movie_name
+    - field.field.node.list.field_why_these_are_in_the_lsits
+    - node.type.list
+  module:
+    - user
+id: node.list.default
+targetEntityType: node
+bundle: list
+mode: default
+content:
+  field_movie_name:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_why_these_are_in_the_lsits:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_date: true
+  search_api_excerpt: true

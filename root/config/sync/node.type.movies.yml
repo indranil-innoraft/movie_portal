@@ -1,0 +1,17 @@
+uuid: 1a6a0ed3-9aa5-4079-b388-d84d04fcd1d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Movies
+type: movies
+description: 'contains movies informations.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
